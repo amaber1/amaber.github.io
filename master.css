@@ -1,0 +1,104 @@
+body{
+
+margin: 0px;
+padding: 0px;
+height:400vh;
+}
+
+#b1{
+  margin-right: 20px;
+}
+#b2{
+  margin-right: 20px;
+}
+#b3{
+  margin-right: 20px;
+}
+#b4{
+  margin-right: 20px;
+}
+
+
+header{
+  display:flex;
+  justify-content: center;
+align-items:flex-end;
+  grid-area: he;
+  background-color: grey;
+  background-image: url('../img/JulDekoration.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+nav{
+  display:flex;
+  justify-content: center;
+align-items: center;
+  grid-area: nav;
+  background-color: lightgrey;
+  background-image: url('../img/.jpg');
+}
+#photo1{
+  grid-area: ph1;
+  background-color: pink;
+  background-image: url('../img/juldryck.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#photo2{
+  grid-area: ph2;
+  background-color: yellow;
+  background-image: url('../img/juldryck2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#history{
+  grid-area: hi;
+  background-color: #121212;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#map{
+  grid-area:map;
+  background-color: green;
+    background-image: url('../img/Karta.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#text1{
+  grid-area:te1;
+  background-color: #bbbabc;
+}
+#text2{
+  grid-area:te2;
+  background-color: #bbbabc;
+}
+#text3{
+  grid-area:te3;
+  background-color: #bbbabc;
+}
+#news{
+  grid-area:ne;
+  background-color: magenta;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer{
+  grid-area: fo;
+  background-color: red;
+}
+
+#wrapper{
+height: 100%;
+
+display:grid;
+grid-template-columns: 16,7% 16,7% 16,7% 16,7% 16,7% 16,7%;
+grid-template-rows: 10% 3% 20% 5% 25% 35%;
+
+grid-template-areas:
+"he he he he he he"
+"nav nav nav nav nav nav"
+"ph1 ph1 ph2 ph2 map map"
+"te1 te1 te2 te2 te3 te3"
+"hi hi hi ne ne ne"
+"fo fo fo fo fo fo";
+}
